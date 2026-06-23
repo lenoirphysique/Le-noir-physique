@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monsieur Lenoir | Professeur de Physique-Chimie</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fa;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+color:white;
+padding:60px 20px;
+text-align:center;
+}
+
+.prof-img{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid white;
+margin-bottom:20px;
+}
+
+header h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:20px;
+margin-bottom:15px;
+}
+
+.slogan{
+font-size:24px;
+font-weight:bold;
+color:#facc15;
+margin-top:15px;
+}
+
+/* NAVBAR */
+
+nav{
+background:white;
+padding:15px;
+text-align:center;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav a{
+text-decoration:none;
+margin:15px;
+font-weight:bold;
+color:#1e3a8a;
+}
+
+/* SECTION */
+
+section{
+padding:50px 10%;
+}
+
+section h2{
+text-align:center;
+color:#1e3a8a;
+margin-bottom:30px;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+/* CARD */
+
+.card{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+color:#1e3a8a;
+margin-bottom:10px;
+}
+
+.button{
+display:inline-block;
+margin-top:10px;
+padding:10px 15px;
+background:#1e3a8a;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+
+/* VIDEO */
+
+iframe{
+width:100%;
+height:220px;
+border:none;
+border-radius:10px;
+}
+
+/* CONTACT */
+
+.contact{
+background:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+}
+
+/* FOOTER */
+
+footer{
+background:#111827;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<img src="prof.jpg" alt="Monsieur Lenoir" class="prof-img">
+
+<h1>Monsieur Lenoir</h1>
+
+<p>Professeur de Physique-Chimie</p>
+
+<div class="slogan">
+"نتا غير ختار وخلي الباقي على لونوار"
+</div>
+
+</header>
+
+<nav>
+<a href="#cours">Cours</a>
+<a href="#exercices">Exercices</a>
+<a href="#videos">Vidéos</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- COURS -->
+
+<section id="cours">
+
+<h2>📚 Cours PDF</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Cours 1</h3>
+<p>Ajouter PDF ici</p>
+<a href="#" class="button">Ouvrir PDF</a>
+</div>
+
+<div class="card">
+<h3>Cours 2</h3>
+<p>Ajouter PDF ici</p>
+<a href="#" class="button">Ouvrir PDF</a>
+</div>
+
+<div class="card">
+<h3>Cours 3</h3>
+<p>Ajouter PDF ici</p>
+<a href="#" class="button">Ouvrir PDF</a>
+</div>
+
+<div class="card">
+<h3>Cours 4</h3>
+<p>Ajouter PDF ici</p>
+<a href="#" class="button">Ouvrir PDF</a>
+</div>
+
+<div class="card">
+<h3>Cours 5</h3>
+<p>Ajouter PDF ici</p>
+<a href="#" class="button">Ouvrir PDF</a>
+</div>
+
+<div class="card">
+<h3>Cours 6</h3>
+<p>Ajouter PDF ici</p>
+<a href="#" class="button">Ouvrir PDF</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- EXERCICES -->
+
+<section id="exercices">
+
+<h2>📝 Exercices PDF</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Série 1</h3>
+<a href="#" class="button">Télécharger</a>
+</div>
+
+<div class="card">
+<h3>Série 2</h3>
+<a href="#" class="button">Télécharger</a>
+</div>
+
+<div class="card">
+<h3>Série 3</h3>
+<a href="#" class="button">Télécharger</a>
+</div>
+
+<div class="card">
+<h3>Série 4</h3>
+<a href="#" class="button">Télécharger</a>
+</div>
+
+<div class="card">
+<h3>Série 5</h3>
+<a href="#" class="button">Télécharger</a>
+</div>
+
+<div class="card">
+<h3>Série 6</h3>
+<a href="#" class="button">Télécharger</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- VIDEOS -->
+
+<section id="videos">
+
+<h2>🎥 Vidéos YouTube</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Vidéo 1</h3>
+
+<a href="https://www.youtube.com/watch?v=_czQ0z0VbDg" target="_blank">
+<img
+src="https://img.youtube.com/vi/_czQ0z0VbDg/maxresdefault.jpg"
+alt="Vidéo 1"
+style="width:100%; border-radius:10px;">
+</a>
+
+</div>
+
+<div class="card">
+<h3>Vidéo 2</h3>
+
+<a href="https://www.youtube.com/watch?v=96raM5gOX0U" target="_blank">
+<img
+src="https://img.youtube.com/vi/96raM5gOX0U/maxresdefault.jpg"
+alt="Vidéo 2"
+style="width:100%; border-radius:10px;">
+</a>
+
+</div>
+
+<div class="card">
+<h3>Vidéo 3</h3>
+
+<a href="https://www.youtube.com/watch?v=8QuZKDatuek" target="_blank">
+<img
+src="https://img.youtube.com/vi/8QuZKDatuek/maxresdefault.jpg"
+alt="Vidéo 3"
+style="width:100%; border-radius:10px;">
+</a>
+
+</div>
+
+<div class="card">
+<h3>Vidéo 4</h3>
+
+<a href="https://www.youtube.com/watch?v=1TRpaO2WSCU" target="_blank">
+<img
+src="https://img.youtube.com/vi/1TRpaO2WSCU/maxresdefault.jpg"
+alt="Vidéo 4"
+style="width:100%; border-radius:10px;">
+</a>
+
+</div>
+
+<div class="card">
+<h3>Vidéo 5</h3>
+
+<a href="https://www.youtube.com/watch?v=3EuCAPjLWQo" target="_blank">
+<img
+src="https://img.youtube.com/vi/3EuCAPjLWQo/maxresdefault.jpg"
+alt="Vidéo 5"
+style="width:100%; border-radius:10px;">
+</a>
+
+</div>
+
+<div class="card">
+<h3>Vidéo 6</h3>
+
+<a href="https://www.youtube.com/watch?v=GPN--S7BYj0" target="_blank">
+<img
+src="https://img.youtube.com/vi/GPN--S7BYj0/maxresdefault.jpg"
+alt="Vidéo 6"
+style="width:100%; border-radius:10px;">
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>📞 Contact</h2>
+
+<div class="contact">
+
+<p><strong>Professeur :</strong> Monsieur Lenoir</p>
+
+<p><strong>Matière :</strong> Physique-Chimie</p>
+
+<p><strong>Email :</strong> votre-email@gmail.com</p>
+
+<p><strong>Téléphone :</strong> +212 XX XX XX XX XX</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Monsieur Lenoir - Physique Chimie
+
+</footer>
+
+</body>
+</html>
