@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Monsieur Lenoir | Professeur de Physique-Chimie</title>
-
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 <style>
 
 *{
@@ -14,9 +14,41 @@ padding:0;
 box-sizing:border-box;
 font-family:Arial,sans-serif;
 }
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+width:60px;
+height:60px;
+background:#25D366;
+color:white;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+text-decoration:none;
+z-index:999;
+}
 
+.instagram-float{
+position:fixed;
+bottom:90px;
+right:20px;
+width:60px;
+height:60px;
+background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
+color:white;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+text-decoration:none;
+z-index:999;
+}
 body{
-background:#f5f7fa;
+background:#020617;
 }
 
 /* HEADER */
@@ -106,12 +138,62 @@ margin-bottom:10px;
 
 .button{
 display:inline-block;
-margin-top:10px;
-padding:10px 15px;
-background:#1e3a8a;
+margin-top:15px;
+padding:14px 28px;
+background:linear-gradient(135deg,#2563eb,#38bdf8);
 color:white;
 text-decoration:none;
-border-radius:8px;
+border-radius:50px;
+font-weight:bold;
+font-size:16px;
+transition:all .3s ease;
+box-shadow:0 8px 20px rgba(37,99,235,.4);
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,.1);
+padding:25px;
+border-radius:20px;
+text-align:center;
+transition:.3s;
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(56,189,248,.25);
+}.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,.1);
+padding:25px;
+border-radius:20px;
+text-align:center;
+transition:.3s;
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(56,189,248,.25);
+}
+
+.button:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 30px rgba(37,99,235,.6);
 }
 
 /* VIDEO */
@@ -144,7 +226,15 @@ color:white;
 text-align:center;
 padding:20px;
 }
-
+#particles-js{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+background:#020617;
+}
 </style>
 </head>
 
@@ -152,7 +242,7 @@ padding:20px;
 
 <header>
 
-<img src="prof.jpg" alt="Monsieur Lenoir" class="prof-img">
+<img src="prof.jpg.jpeg" alt="Monsieur Lenoir" class="prof-img">
 
 <h1>Monsieur Lenoir</h1>
 
@@ -359,7 +449,7 @@ style="width:100%; border-radius:10px;">
 
 <p><strong>Email :</strong> votre-email@gmail.com</p>
 
-<p><strong>Téléphone :</strong> +212 XX XX XX XX XX</p>
+<p><strong>Téléphone :</strong> 212707715551</p>
 
 </div>
 
@@ -370,6 +460,36 @@ style="width:100%; border-radius:10px;">
 © 2026 Monsieur Lenoir - Physique Chimie
 
 </footer>
+<div id="particles-js"></div>
 
+<script>
+particlesJS("particles-js", {
+particles:{
+number:{value:80},
+color:{value:"#38bdf8"},
+shape:{type:"circle"},
+opacity:{value:0.5},
+size:{value:4},
+line_linked:{
+enable:true,
+distance:150,
+color:"#38bdf8",
+opacity:0.4,
+width:1
+},
+move:{
+enable:true,
+speed:2
+}
+}
+});
+</script>
+<a href="https://wa.me/212707715551" class="whatsapp-float" target="_blank">
+📱
+</a>
+
+<a href="https://instagram.com/monsieur_le_noir" class="instagram-float" target="_blank">
+📷
+</a>
 </body>
 </html>
